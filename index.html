@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Terravoz</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	
+	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+		<style type="text/css">
+			.circle_img {display:none; }
+			#slide1 span {font-size:26px;}
+		</style>
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+
+		});		
+	</script>
+	
+</head>
+
+<body>
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+
+		<div id="content" class="grid_12">
+			<div class="filtr_bg">
+				<h1>Terravoz</h1>
+				<div class="slogan">
+					<div class="left_bord"></div>
+					<div class="slogan_text">
+democratic participation through 
+<br>
+open-source telephony
+                    </div>
+					<div class="right_bord"></div>
+				</div>
+				<a class="button" title="" data-slide="2"></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="menu">	
+	<div class="container clearfix">
+
+		<div id="logo" class="fleft">
+			<a href="index.html"><img src="images/logo.png" /></a>
+		</div>
+		
+		<div id="nav" class="fright">
+			<ul class="navigation">
+				<li data-slide="1">Home</li>
+				<li data-slide="2">About</li>
+				<li data-slide="4">Services</li>
+				<li data-slide="6">Portfolio</li>
+				<li data-slide="8">Contact</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1>About</h1>
+			<div class="h1_viva">Terravoz is an open-source tech shop whose innovative voice, SMS, and web-based solutions foster democratic participation and community empowerment worldwide.
+            <br><br>
+            Our mission is to meet the information needs of the most underserved individuals — 10 to 17 million in the U.S. and 5.6 billion worldwide — who rely on basic mobile phones as their main form of technological access.</div>
+		</div>
+		
+<!--        
+		<div id="content">
+			<div class="grid_4">
+				<p>Our mission is to meet the information needs of the most underserved individuals — 10 to 17 million in the U.S. and 5.6 billion worldwide — who rely on basic mobile phones as their main form of technological access.</p>
+			</div>
+			<div class="grid_4">
+				<p>Terravoz's products are built on our extensive collection of simple, ready-made open source modules that bring the power of voice, touch-phone telephony, and SMS to connect technologically-challenged communities to the Internet.</p>
+			</div>
+			<div class="grid_4 omega">
+				<p>Our clients include governments, non-profits, and grassroots organizations such as The World Bank, MIT's Center for Civic Media, Studio REV-, and The National Domestic Workers Alliance.  Our products have been showcased at The White House, on BBC, GOOD magazine, New York Times, conferences and universities worldwide.</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+-->
+	</div>
+</div>
+
+
+
+
+<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+	<div class="padding_slide3">
+		
+		<div class="button_bg"><a class="button button3" title="" data-slide="1"></a></div>
+		
+	</div>
+</div>
+
+
+
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1>Services</h1>
+			<!--
+            <div class="h1_viva">Vivamus iaculis ultricies mauris id posuere. Praesent mollis tincidunt diam, in</div>
+            !-->
+		</div>
+		
+		<div id="content">
+			<div class="grid_6">
+				<p>Terravoz's products are built on our extensive collection of simple, ready-made open source modules that bring the power of voice, touch-phone telephony, and SMS to connect technologically-challenged communities to the Internet.
+                </p>
+                <p>
+Key benefits of our unique, non-proprietary products include:
+<br>
+<br>• Easy installation and configuration. 
+<br>• No additional programming needed.
+<br>• Easy to customize. Only use the features you need.
+<br>• The ability to unify web, email, voice, and SMS. 
+<br>• Sustainably develop scalable projects 
+<br>• Users don't have to have a costly data plan 
+<br>• Support from a community of open-source developers 
+<br>• For developers: our VoIP Drupal platform is built on a visual programming language for fast prototyping 
+</p>
+                
+			</div>
+			<div class="grid_6 omega">
+				<div class="servc_block">
+					<a href="javascript:void(0);" alt="">Products Customized for Mobile Phones</a>
+
+<br>• SMS "Get Out to Vote" campaigns
+<br>• 2-1-1 and 3-1-1 community hotlines
+<br>• Audio-based dispatch systems  
+<br>• Phone- and SMS-based surveys
+<br>• Group communication  
+<br>• Story recording / playback
+<br>• Audio-based community bulletin boards 
+<br>• Audio neighborhood tours
+<br>• Place-based adventure games
+<br>• Interactive community radio programs
+<br>• Emergency announcements
+	
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="padding_slide5">
+		
+		<div class="button_bg"><a class="button button3" title="" data-slide="1"></a></div>
+		
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1>Portfolio</h1>
+			<div class="h1_viva">Our clients include governments, non-profits, and grassroots organizations such as The World Bank, MIT's Center for Civic Media, Studio REV-, and The National Domestic Workers Alliance.  Our products have been showcased at The White House, on BBC, GOOD magazine, New York Times, conferences and universities worldwide.</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="contenet">
+			<div class="gallery-list">
+				<!-- portfolio_block -->
+				<div>
+					<div class="img_block">
+						<div class="hover_img">
+							<img class="portf_img" src="images/portfolio/1.jpg" alt="" />
+							<div class="item_description">
+								<p>OnTrack</p>
+								 a World Bank system designed to foster civic participation via phone, web and SMS for communities in Bolivia, Nepal and Zambia. 
+								<span class="portfolio_zoom"><a href="images/portfolio/full/1.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="https://vimeo.com/84907598">View item</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img">
+							<img class="portf_img" src="images/portfolio/2.jpg" alt="" />
+							<div class="item_description">
+								<p>New Day New Standard</p>
+								a "public art nanny hotline" that informs 200,000 nannies, housekeepers, and elderly caregivers in New York about their newfound rights.
+								<span class="portfolio_zoom"><a href="images/portfolio/full/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img">
+							<img class="portf_img" src="images/portfolio/3.jpg" alt="" />
+							<div class="item_description">
+							<p>VoJo</p>
+								a mobile blogging platform that makes it easy for grassroots groups to post content via voice calls, SMS, or MMS
+								<span class="portfolio_zoom"><a href="images/portfolio/full/3.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="img_block omega">
+						<div class="hover_img">
+							<img class="portf_img" src="images/portfolio/4.jpg" alt="" />
+							<div class="item_description">
+								<p>What's Up</p>
+				a mobile platform and community bulletin board where communities access web-based content via signage in public space. 
+                 
+								<span class="portfolio_zoom"><a href="images/portfolio/full/4.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img">
+							<img class="portf_img" src="images/portfolio/5.jpg" alt="" />
+							<div class="item_description">
+								<p>kub lu </p>
+								kuyv kyvj 
+								<span class="portfolio_zoom"><a href="images/portfolio/full/5.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img">
+							<img class="portf_img" src="images/portfolio/6.jpg" alt="" />
+							<div class="item_description">
+								<p>My Dot Tour</p>
+								A system that helps people organize participatory neighborhood tours using web, SMS and even touchtone phones
+								<span class="portfolio_zoom"><a href="images/portfolio/full/6.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="https://www.youtube.com/watch?v=pKpICauLQ9E">View item</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img">
+							<img class="portf_img" src="images/portfolio/7.jpg" alt="" />
+							<div class="item_description">
+								<p>nikki johnson</p>
+								Nam eleifend vulputate diam non accumsan. Fusce felis
+								<span class="portfolio_zoom"><a href="images/portfolio/full/7.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="img_block omega">
+						<div class="hover_img">
+							<img class="portf_img" src="images/portfolio/8.jpg" alt="" />
+							<div class="item_description">
+								<p>nikki johnson</p>
+								Nam eleifend vulputate diam non accumsan. Fusce felis
+								<span class="portfolio_zoom"><a href="images/portfolio/full/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+				</div>   
+				<!-- //portfolio_block -->   
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+	<div class="padding_slide7">
+		
+		<div class="button_bg"><a class="button button3" title="" data-slide="1"></a></div>
+		
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1>Contact</h1>
+			<div class="h1_viva">Vivamus iaculis ultricies mauris id posuere. Praesent mollis tincidunt diam, in sagittis odio</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_12">
+			<p>Nullam aliquam, mauris sit amet convallis condimentum, massa tortor pretium magna, vitae rutrum libero nibh vitae nisl. Sed imperdiet dictum sapien. Mauris tortor massa, euismod eu rhoncus dignissim, ultrices at leo. Donec gravida, lorem ac sollicitudin venenatis, ante risus convallis massa, non porta eros diam sit amet elit. Ut blandit ornare ante hendrerit malesuada. Duis eget odio at erat condimentum tempus. Duis fermentum odio nec arcu elementum sit amet</p>
+			<div class="contact_form">  
+				<div id="note"></div>
+				<div id="fields">
+					<form id="ajax-contact-form" action="">
+						<div class="grid_6">
+							<input type="text" name="name" value="" placeholder="Name" />
+							<input type="text" name="subject" value="" placeholder="Phone" />
+							<input type="text" name="email" value="" placeholder="Email" />
+						</div>
+						<div class="grid_6 omega"><textarea name="message" id="message" placeholder="Message"></textarea></div>
+						<div class="clear"></div>
+						<input type="reset" class="contact_btn" value="Clear Form" />
+						<input type="submit" class="contact_btn send_btn" value="Send" />
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+		</div>		
+		<div class="clear"></div>
+
+	</div>
+	
+	<div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=los+angeles&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=53.080379,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+California&amp;ll=34.052234,-118.243685&amp;spn=0.003427,0.006968&amp;t=m&amp;z=14&amp;output=embed"></iframe></div>
+	
+</div>
+
+
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">coral &copy; 2020 | <a href="javascript:void(0);">Privacy Policy</a></div>
+		<div id="back_top"><a class="button" title="" data-slide="1">top</a></div>
+	</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
