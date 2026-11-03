@@ -1,58 +1,25 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<meta name="description" content="Terravoz is a strategy, research and technology development company that works with government, non-profit and grassroots organizations in the implementation of voice, SMS and web-based solutions for open governance, social inclusion and community empowerment.">
 	<title>Terravoz</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
 	
-	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
-	
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<script src="js/respond.src.js"></script>
-		<style type="text/css">
-			.circle_img {display:none; }
-			#slide1 span {font-size:26px;}
-		</style>
-	<![endif]-->
-	
-	<script type="text/javascript">
-		$(document).ready(function(){	
-			$("#ajax-contact-form").submit(function() {
-				var str = $(this).serialize();		
-				$.ajax({
-					type: "POST",
-					url: "contact_form/contact_process.php",
-					data: str,
-					success: function(msg) {
-						// Message Sent - Show the 'Thank You' message and hide the form
-						if(msg == 'OK') {
-							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
-							$("#fields").hide();
-						} else {
-							result = msg;
-						}
-						$('#note').html(result);
-					}
-				});
-				return false;
-			});
-
-		});		
-	</script>
 	
 </head>
 
@@ -86,7 +53,7 @@ voice, text, and web solutions
 	<div class="container clearfix">
 
 		<div id="logo" class="fleft">
-			<a href="index.html"><img src="images/logo.png" /></a>
+			<a href="index.html"><img src="images/logo.png" alt="Terravoz" /></a>
 		</div>
 		
 		<div id="nav" class="fright">
@@ -238,7 +205,7 @@ Key benefits of our unique, non-proprietary products include:
 				<div>
 					<div class="img_block">
 						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/1.jpg" alt="" />
+							<img class="portf_img" src="images/portfolio/1.jpg" alt="OnTrack" />
 							<div class="item_description">
 								<p>OnTrack</p>
 								 a World Bank system designed to foster civic participation via phone, web and SMS for communities in Bolivia, Nepal and Zambia. 
@@ -249,79 +216,43 @@ Key benefits of our unique, non-proprietary products include:
 					</div>
 					<div class="img_block">
 						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/2.jpg" alt="" />
+							<img class="portf_img" src="images/portfolio/2.jpg" alt="New Day New Standard" />
 							<div class="item_description">
 								<p>New Day New Standard</p>
 								a "public art nanny hotline" that informs 200,000 nannies, housekeepers, and elderly caregivers in New York about their newfound rights.
 								<span class="portfolio_zoom"><a href="images/portfolio/full/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
 							</div>
 						</div>
 					</div>
 					<div class="img_block">
 						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/3.jpg" alt="" />
+							<img class="portf_img" src="images/portfolio/3.jpg" alt="VoJo" />
 							<div class="item_description">
 							<p>VoJo</p>
 								a mobile blogging platform that makes it easy for grassroots groups to post content via voice calls, SMS, or MMS
 								<span class="portfolio_zoom"><a href="images/portfolio/full/3.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
 							</div>
 						</div>
 					</div>
 					<div class="img_block omega">
 						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/4.jpg" alt="" />
+							<img class="portf_img" src="images/portfolio/4.jpg" alt="What&#39;s Up" />
 							<div class="item_description">
 								<p>What's Up</p>
 				a mobile platform and community bulletin board where communities access web-based content via signage in public space. 
                  
 								<span class="portfolio_zoom"><a href="images/portfolio/full/4.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
 							</div>
 						</div>
 					</div>
 					<div class="img_block">
 						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/5.jpg" alt="" />
-							<div class="item_description">
-								<p>kub lu </p>
-								kuyv kyvj 
-								<span class="portfolio_zoom"><a href="images/portfolio/full/5.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-							</div>
-						</div>
-					</div>
-					<div class="img_block">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/6.jpg" alt="" />
+							<img class="portf_img" src="images/portfolio/6.jpg" alt="My Dot Tour" />
 							<div class="item_description">
 								<p>My Dot Tour</p>
 								A system that helps people organize participatory neighborhood tours using web, SMS and even touchtone phones
 								<span class="portfolio_zoom"><a href="images/portfolio/full/6.jpg" rel="prettyPhoto[portfolio1]"></a></span>
 								<span class="portfolio_link"><a href="https://www.youtube.com/watch?v=pKpICauLQ9E">View item</a></span>
-							</div>
-						</div>
-					</div>
-					<div class="img_block">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/7.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam non accumsan. Fusce felis
-								<span class="portfolio_zoom"><a href="images/portfolio/full/7.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
-							</div>
-						</div>
-					</div>
-					<div class="img_block omega">
-						<div class="hover_img">
-							<img class="portf_img" src="images/portfolio/8.jpg" alt="" />
-							<div class="item_description">
-								<p>nikki johnson</p>
-								Nam eleifend vulputate diam non accumsan. Fusce felis
-								<span class="portfolio_zoom"><a href="images/portfolio/full/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
-								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
 							</div>
 						</div>
 					</div>
@@ -352,35 +283,16 @@ Key benefits of our unique, non-proprietary products include:
 		
 		<div id="content" class="grid_12">
 			<h1>Contact</h1>
-			<div class="h1_viva">Vivamus iaculis ultricies mauris id posuere. Praesent mollis tincidunt diam, in sagittis odio</div>
+			<div class="h1_viva">Questions, ideas, or a project in mind? Write to us.</div>
 		</div>
 		<div class="clear"></div>
 		
 		<div class="grid_12">
-			<p>Nullam aliquam, mauris sit amet convallis condimentum, massa tortor pretium magna, vitae rutrum libero nibh vitae nisl. Sed imperdiet dictum sapien. Mauris tortor massa, euismod eu rhoncus dignissim, ultrices at leo. Donec gravida, lorem ac sollicitudin venenatis, ante risus convallis massa, non porta eros diam sit amet elit. Ut blandit ornare ante hendrerit malesuada. Duis eget odio at erat condimentum tempus. Duis fermentum odio nec arcu elementum sit amet</p>
-			<div class="contact_form">  
-				<div id="note"></div>
-				<div id="fields">
-					<form id="ajax-contact-form" action="">
-						<div class="grid_6">
-							<input type="text" name="name" value="" placeholder="Name" />
-							<input type="text" name="subject" value="" placeholder="Phone" />
-							<input type="text" name="email" value="" placeholder="Email" />
-						</div>
-						<div class="grid_6 omega"><textarea name="message" id="message" placeholder="Message"></textarea></div>
-						<div class="clear"></div>
-						<input type="reset" class="contact_btn" value="Clear Form" />
-						<input type="submit" class="contact_btn send_btn" value="Send" />
-						<div class="clear"></div>
-					</form>
-				</div>
-			</div>
-		</div>		
+			<p class="contact_mail"><a href="mailto:info@terravoz.net">info@terravoz.net</a></p>
+		</div>
 		<div class="clear"></div>
 
 	</div>
-	
-	<div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=los+angeles&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=53.080379,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+California&amp;ll=34.052234,-118.243685&amp;spn=0.003427,0.006968&amp;t=m&amp;z=14&amp;output=embed"></iframe></div>
 	
 </div>
 
@@ -389,7 +301,7 @@ Key benefits of our unique, non-proprietary products include:
 
 <div id="footer">
 	<div class="container clearfix">
-		<div class="copyright">coral &copy; 2020 | <a href="javascript:void(0);">Privacy Policy</a></div>
+		<div class="copyright">Terravoz &copy; 2026</div>
 		<div id="back_top"><a class="button" title="" data-slide="1">top</a></div>
 	</div>
 </div>
