@@ -3,7 +3,7 @@ Terravoz website
 
 The Terravoz one-page site: plain HTML, CSS and a little vanilla JavaScript, with no build step and no frameworks. It is static, so it can be served by GitHub Pages straight from the root of the `master` branch.
 
-The layout and styles (`assets/css/site.css`) were written from scratch. They recreate the look of the earlier Drupal 7 site without using any code or images from its commercial Porto theme. The text, logo, project pictures, team photos and client logos are Terravoz's own.
+The layout and styles (`assets/css/site.css`) were written from scratch. They recreate the look of the earlier Drupal 7 site (full-width photographs with translucent panels laid over them) without using any code or images from its commercial Porto theme. The text, logo, background photographs, project pictures, team photos and client logos are Terravoz's own.
 
 Structure
 ---------
@@ -11,7 +11,7 @@ Structure
 - `index.html`: all the content, in sections (About, Technology, Portfolio, Team, Clients, Contact).
 - `assets/css/site.css`: styles.
 - `assets/js/site.js`: mobile menu, menu highlighting and the contact form.
-- `assets/img/`: logo, project pictures, team photos, client logos.
+- `assets/img/`: logo, background photographs, project pictures, team photos, client logos.
 - `assets/docs/`: the VoIP Drupal fact sheet (PDF).
 
 Preview locally:

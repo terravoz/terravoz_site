@@ -8,7 +8,7 @@
 	<link rel="icon" href="assets/img/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
 	<link rel="stylesheet" href="assets/css/site.css">
 	<script src="assets/js/site.js" defer></script>
 </head>
@@ -37,14 +37,18 @@
 
 <section class="hero" aria-labelledby="hero-title">
 	<div class="wrap">
-		<p class="eyebrow">Who we are and what we do</p>
-		<h1 id="hero-title">Empowering communities <span>through voice, text, and web solutions</span></h1>
-		<p class="hero-links"><a class="btn btn-light" href="#portfolio">See our work</a> <a class="btn btn-ghost" href="#contact">Contact us</a></p>
+		<div class="hero-panel">
+			<p class="eyebrow">Who we are and what we do</p>
+			<h1 id="hero-title">Empowering communities <span>through voice, text, and web solutions</span></h1>
+			<p class="hero-links"><a class="btn" href="#portfolio">See our work</a> <a class="btn btn-ghost" href="#contact">Contact us</a></p>
+		</div>
 	</div>
 </section>
 
-<section class="section" id="about" aria-labelledby="about-title">
-	<div class="wrap two-col">
+<section class="section about" id="about" aria-labelledby="about-title">
+	<div class="wrap">
+		<div class="panel two-col">
+		<a class="chevron" href="#technology" aria-label="Continue to Technology"></a>
 		<div>
 			<p class="eyebrow">Our story so far</p>
 			<h2 id="about-title">About us</h2>
@@ -56,11 +60,13 @@
 			<p>Our team believes that the right combination of technology and social outreach can lead to communities that are healthier, better educated, more sustainable and more democratic. We look forward to collaborating with governments, businesses and non-profit organizations that share that vision. <a href="#contact">Contact us now!</a></p>
 			<p class="callout">In spite of recent developments in mobile technology, more than 4 billion people still do not have regular access to computers, smartphones or the internet. Terravoz addresses this issue by building solutions that bring information where people are, through the devices and mechanisms they already have, and in their own voices, literally.</p>
 		</div>
+		</div>
 	</div>
 </section>
 
-<section class="section section-tint" id="technology" aria-labelledby="tech-title">
-	<div class="wrap two-col">
+<section class="section photo photo-tech" id="technology" aria-labelledby="tech-title">
+	<div class="wrap">
+		<div class="panel two-col">
 		<div>
 			<p class="eyebrow">Technology</p>
 			<h2 id="tech-title">VoIP Drupal</h2>
@@ -83,14 +89,17 @@
 				<li>Audio neighborhood tours</li>
 			</ul>
 		</div>
+		</div>
 	</div>
 </section>
 
-<section class="section" id="portfolio" aria-labelledby="portfolio-title">
+<section class="section photo photo-portfolio" id="portfolio" aria-labelledby="portfolio-title">
 	<div class="wrap">
+		<div class="panel panel-head">
 		<p class="eyebrow">Project portfolio</p>
 		<h2 id="portfolio-title">Our work</h2>
 		<p class="lead narrow">Our clients include government, non-profit, and grassroots organizations, such as The World Bank, MIT’s Center for Civic Media, Studio REV-, and The National Domestic Workers Alliance. Our products have been showcased at The White House, on BBC, GOOD magazine, New York Times, conferences and universities worldwide.</p>
+		</div>
 
 		<div class="cards">
 			<article class="card">
@@ -151,8 +160,9 @@
 	</div>
 </section>
 
-<section class="section section-tint" id="team" aria-labelledby="team-title">
+<section class="section team" id="team" aria-labelledby="team-title">
 	<div class="wrap">
+		<div class="panel">
 		<p class="eyebrow">The people</p>
 		<h2 id="team-title">Team members</h2>
 
@@ -189,6 +199,7 @@
 				</div>
 			</article>
 		</div>
+		</div>
 	</div>
 </section>
 
@@ -211,8 +222,9 @@
 	</div>
 </section>
 
-<section class="section section-dark" id="contact" aria-labelledby="contact-title">
-	<div class="wrap two-col">
+<section class="section photo photo-contact section-dark" id="contact" aria-labelledby="contact-title">
+	<div class="wrap">
+		<div class="panel two-col">
 		<div>
 			<p class="eyebrow">Interested in learning more?</p>
 			<h2 id="contact-title">Get in touch</h2>
@@ -241,6 +253,7 @@
 				<textarea id="f-message" name="message" rows="5" required></textarea>
 				<button class="btn btn-light" type="submit">Send</button>
 			</form>
+		</div>
 		</div>
 	</div>
 </section>
