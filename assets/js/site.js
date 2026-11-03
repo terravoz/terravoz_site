@@ -90,4 +90,30 @@
 			button.disabled = false;
 		});
 	});
+
+	// Project popups
+	var dialogs = [].slice.call(document.querySelectorAll('dialog.project'));
+	function openDialog(d) {
+		if (typeof d.showModal === 'function') { d.showModal(); }
+		else { d.setAttribute('open', ''); }
+	}
+	[].forEach.call(document.querySelectorAll('.card-open'), function (button) {
+		button.addEventListener('click', function () {
+			openDialog(document.getElementById(button.getAttribute('data-dialog')));
+		});
+	});
+	dialogs.forEach(function (d, i) {
+		d.addEventListener('click', function (e) {
+			// a click on the dimmed backdrop lands on the dialog element itself
+			if (e.target === d || e.target.hasAttribute('data-close')) { d.close(); }
+		});
+		d.querySelector('[data-prev]').addEventListener('click', function () {
+			d.close();
+			openDialog(dialogs[(i + dialogs.length - 1) % dialogs.length]);
+		});
+		d.querySelector('[data-next]').addEventListener('click', function () {
+			d.close();
+			openDialog(dialogs[(i + 1) % dialogs.length]);
+		});
+	});
 })();

@@ -10,9 +10,11 @@ Structure
 
 - `index.html`: all the content, in sections (About, Technology, Portfolio, Team, Clients, Contact).
 - `assets/css/site.css`: styles.
-- `assets/js/site.js`: mobile menu, menu highlighting and the contact form.
-- `assets/img/`: logo, background photographs, project pictures, team photos, client logos.
+- `assets/js/site.js`: mobile menu, menu highlighting, the project popups and the contact form.
+- `assets/img/`: logo, background photographs, project pictures, team photos, client logos, and `map-belmont.jpg` (a static map built from OpenStreetMap tiles, © OpenStreetMap contributors, ODbL).
 - `assets/docs/`: the VoIP Drupal fact sheet (PDF).
+
+Each portfolio card opens a popup (a native `<dialog>` element in `index.html`, one per project). To add or change a project, edit its card and its dialog together.
 
 Preview locally:
 
